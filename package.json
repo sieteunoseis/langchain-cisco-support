@@ -5,9 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "npx tsx index.ts",
-    "cisco": "npx tsx cisco-mcp-example.ts",
-    "dev": "npx tsx --watch index.ts",
-    "cisco:dev": "npx tsx --watch cisco-mcp-example.ts"
+    "dev": "npx tsx --watch index.ts"
   },
   "dependencies": {
     "@langchain/core": "^1.0.0-alpha.7",
