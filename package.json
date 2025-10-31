@@ -1,0 +1,22 @@
+{
+  "name": "langchain-openrouter-cisco-mcp",
+  "version": "1.0.0",
+  "description": "LangChain agent with OpenRouter and Cisco MCP integration",
+  "type": "module",
+  "scripts": {
+    "start": "npx tsx index.ts",
+    "cisco": "npx tsx cisco-mcp-example.ts",
+    "dev": "npx tsx --watch index.ts",
+    "cisco:dev": "npx tsx --watch cisco-mcp-example.ts"
+  },
+  "dependencies": {
+    "@langchain/core": "^1.0.0-alpha.7",
+    "@langchain/openai": "^1.0.0-alpha.3",
+    "@modelcontextprotocol/sdk": "^1.20.2",
+    "dotenv": "^17.2.3",
+    "langchain": "^1.0.0-alpha.9"
+  },
+  "devDependencies": {
+    "@types/node": "^24.9.2"
+  }
+}
