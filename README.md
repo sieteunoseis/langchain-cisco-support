@@ -4,8 +4,7 @@ This project demonstrates how to use LangChain with OpenRouter and integrate MCP
 
 ## Files
 
-- **[index.ts](index.ts)** - Basic LangChain agent example with OpenRouter
-- **[cisco-mcp-example.ts](cisco-mcp-example.ts)** - LangChain agent integrated with Cisco Support MCP server
+- **[index.ts](index.ts)** - LangChain agent integrated with Cisco Support MCP server
 
 ## Prerequisites
 
@@ -37,18 +36,10 @@ This project demonstrates how to use LangChain with OpenRouter and integrate MCP
 
 ## Running Examples
 
-### Basic Example (Weather Tool)
-
-```bash
-npx tsx index.ts
-```
-
-This runs a simple agent with a custom weather tool using Claude 3.5 Sonnet via OpenRouter.
-
 ### Cisco MCP Example
 
 ```bash
-npx tsx cisco-mcp-example.ts
+npx tsx index.ts
 ```
 
 This example:
@@ -85,7 +76,7 @@ The MCP server provides access to:
 
 ### Change the AI Model
 
-In [cisco-mcp-example.ts](cisco-mcp-example.ts:73-81), you can change the model to any OpenRouter-supported model:
+In [index.ts](index.ts:73-81), you can change the model to any OpenRouter-supported model:
 
 ```typescript
 const model = new ChatOpenAI({
@@ -103,7 +94,7 @@ Popular options:
 
 ### Enable/Disable Cisco APIs
 
-In [cisco-mcp-example.ts](cisco-mcp-example.ts:13), modify the `SUPPORT_API` environment variable:
+In [index.ts](index.ts:13), modify the `SUPPORT_API` environment variable:
 
 ```typescript
 SUPPORT_API: "bug,case,eox,psirt", // Add or remove APIs
